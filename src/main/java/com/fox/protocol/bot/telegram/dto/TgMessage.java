@@ -2,6 +2,8 @@ package com.fox.protocol.bot.telegram.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+
 public class TgMessage {
   @JsonProperty("message_id")
   private int messageId;
@@ -33,6 +35,20 @@ public class TgMessage {
   @JsonProperty("author_signature")
   private String authorSignature;
   private String text;
-  private
+  private List<TgMessageEntity> entities;
+  private TgAnimation animation;
+  private TgAudio audio;
+  private TgDocument document;
+  private List<TgPhotoSize> photo;
+  private TgSticker sticker;
+  private TgVideo video;
+  @JsonProperty("video_note")
+  private TgVideoNote videoNote;
+  private TgVoice voice;
+  private String caption;
+  @JsonProperty("caption_entities")
+  private List<TgMessageEntity> captionEntities;
+  private TgContact contact;
+  private TgDice dice;
 
 }
