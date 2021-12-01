@@ -50,5 +50,44 @@ public class TgMessage {
   private List<TgMessageEntity> captionEntities;
   private TgContact contact;
   private TgDice dice;
+  private TgGame game;
+  private TgPoll poll;
+  private TgVenue venue;
+  private TgLocation location;
+  @JsonProperty("new_chat_members")
+  private List<TgUser> newChatMembers;
+  @JsonProperty("left_chat_member")
+  private TgUser leftChatMember;
+  private String newChatTitle;
+  @JsonProperty("new_chat_photo")
+  private List<TgPhotoSize> newChatPhoto;
+  @JsonProperty("delete_chat_photo")
+  private boolean deleteChatPhoto;
+  @JsonProperty("group_chat_created")
+  private boolean groupChatCreated;
+  @JsonProperty("supergroup_chat_created")
+  private boolean superGroupChatCreated;
+  @JsonProperty("channel_chat_created")
+  private boolean channelChatCreated;
+  @JsonProperty("message_auto_delete_timer_changed")
+  private TgMessageAutoDeleteTimerChanged messageAutoDeleteTimerChanged;
+  @JsonProperty("migrate_to_chat_id")
+  private int migrateToChatId;
+  @JsonProperty("migrate_from_chat_id")
+  private int migrateFromChatId;
+  @JsonProperty("pinned_message")
+  private TgMessage pinnedMessage;
+  private TgInvoice invoice;
+  @JsonProperty("successful_payment")
+  private TgSuccessfulPayment successfulPayment;
+  @JsonProperty("connected_website")
+  private String connectedWebsite;
+  @JsonProperty("passport_data")
+  private TgPassportData passportData;
+  @JsonProperty("proximity_alert_triggered")
+  private TgProximityAlertTriggered proximityAlertTriggered;
+  @JsonProperty("voice_chat_scheduled")
+  private TgVoiceChatScheduled voiceChatScheduled;
+  private
 
 }
